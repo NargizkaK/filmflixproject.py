@@ -4,7 +4,7 @@ import sqlite3 as sql # imported sqlite module
 def fldb_access():
     try:
      # how to access DB
-        with sql.connect('Python/project.py/filmflix.db') as flConnect:
+        with sql.connect('filmflix.db') as flConnect:
             flCursor = flConnect.cursor() 
             
             return flConnect, flCursor

@@ -15,7 +15,7 @@ def films_menu():
         option = 0 
         optionsList = ["1","2","3","4","5","6"]
  
-        menu_choices = open_file("Python/project.py/__pycache__/flmMenutxt")
+        menu_choices = open_file("flmMenutxt")
  
         while option not in optionsList:
             print(menu_choices)

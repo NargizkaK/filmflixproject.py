@@ -1,7 +1,7 @@
 import sqlite3 as sql # imported sqlite module
 def fl_access():
     try:
-        with sql.connect('Python/project.py/filmflix.db') as flConnect:
+        with sql.connect('filmflix.db') as flConnect:
             flCursor = flConnect.cursor() #cursor function is used to call the execute method
             
             return flConnect, flCursor
